@@ -26,8 +26,8 @@ season_id SERIAL Primary Key,
 season_name varchar (50) not NULL
 );
 
-insert into season (season_name)
-values ('Spring'), ('Summer'), ('Fall'), ('Winter')
+insert into season (season_name, state_id)
+values ('Spring','FL'), ('Summer','FL'), ('Fall', 'FL'), ('Winter', 'FL');
 
 select *
 from season;
